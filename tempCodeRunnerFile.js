@@ -1,1 +1,2 @@
-2,44,12,53,23
+null; // check if 2 elements exist
+      return unique[unique.length - 2]
