@@ -10,14 +10,10 @@ function SortArray(arr) {
     }
     return arr;
   }
-  
-  // ✅ Output: [2, 3, 4, 5, 5, 8, 9]
-  
   function secondLargest(arr) {
       const sorted = SortArray(arr);
       const unique = [...new Set(sorted)]; // remove duplicates
       if (unique.length < 2) return null; // check if 2 elements exist
       return unique[unique.length - 2];   // second last element
-    }
-    
+ }
     console.log(secondLargest([9,2, 5, 8, 4, 3, 9, 5,1])); 
